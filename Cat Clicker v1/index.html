@@ -1,0 +1,28 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+        var count = 0;
+        $('#image').click(function(){
+            count++;
+            $('#count').text('Count: '+count);
+        });
+    });
+    </script>
+</head>
+<body>
+    <div id="image">
+        <picture>
+            <source media="(min-width:500px)" srcset="images/cat.jpg">
+            <source media="(max-width:500px)" srcset="images/small_cat.jpg">
+            <img src="images/cat.jpg" alt="A cat">
+        </picture>
+    </div>
+    <br/>
+    <div>
+        <div id="count">Count: 0</div>
+    </div>
+</body>
+</html>
