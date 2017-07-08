@@ -1,0 +1,34 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body class="grid">
+    <div class="row">
+        <div class="col-6" id="image1">
+            <picture>
+                <source media="(min-width:700px)" srcset="images/cat1.jpg">
+                <source media="(max-width:700px)" srcset="images/small_cat1.jpg">
+                <img src="images/cat1.jpg" alt="A cat">
+            </picture>
+        </div>
+        <div class="col-6" id="image2">
+            <picture>
+                <source media="(min-width:700px)" srcset="images/cat2.jpg">
+                <source media="(max-width:700px)" srcset="images/small_cat2.jpg">
+                <img src="images/cat2.jpg" alt="A cat">
+            </picture>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6" id="count1">
+            Count: 0
+        </div>
+        <div class="col-6" id="count2">
+            Count: 0
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
